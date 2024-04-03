@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "user_management",
-    "dateExported": "2024-04-03T12:46:41.606Z",
+    "dateExported": "2024-04-03T13:02:43.760Z",
     "version": "1.1",
     "folders": [
         {
@@ -18,11 +18,11 @@
             "colId": "4199f3c9-89e8-4f95-b7eb-0a712939aa26",
             "containerId": "0acea0fa-1328-4e4a-b3c3-937ab9c42cfd",
             "name": "get user by id",
-            "url": "http://localhost:3000/users/6",
+            "url": "http://localhost:3000/users/4",
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-04-03T12:43:49.851Z",
-            "modified": "2024-04-03T12:45:18.223Z",
+            "modified": "2024-04-03T13:02:33.571Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -63,6 +63,20 @@
                 "raw": " {\r\n    \"name\": \"Joy Choudhury\",\r\n    \"email\": \"joy@example.com\",\r\n    \"age\": 29,\r\n    \"gender\": \"male\",\r\n    \"address\": \"999 Cedar Street\",\r\n    \"mobileNo\": \"9999999999\"\r\n  }",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "fb1a4f44-1bed-4807-bfe9-c83b9fe8b158",
+            "colId": "4199f3c9-89e8-4f95-b7eb-0a712939aa26",
+            "containerId": "0acea0fa-1328-4e4a-b3c3-937ab9c42cfd",
+            "name": "delete user",
+            "url": "http://localhost:3000/users/5",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-04-03T13:01:26.308Z",
+            "modified": "2024-04-03T13:02:24.086Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ]
