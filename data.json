@@ -1,0 +1,47 @@
+[
+  {
+    "id":1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "age": 25,
+    "gender": "male",
+    "address": "123 Main Street",
+    "mobileNo": "1234567890"
+  },
+  {
+    "id":2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "age": 30,
+    "gender": "female",
+    "address": "456 Elm Street",
+    "mobileNo": "9876543210"
+  },
+  {
+    "id":3,
+    "name": "Chris Johnson",
+    "email": "chris@example.com",
+    "age": 22,
+    "gender": "other",
+    "address": "789 Oak Street",
+    "mobileNo": "5555555555"
+  },
+  {
+    "id":4,
+    "name": "Emily Brown",
+    "email": "emily@example.com",
+    "age": 35,
+    "gender": "female",
+    "address": "101 Pine Street",
+    "mobileNo": "7777777777"
+  },
+  {
+    "id":5,
+    "name": "Alex Lee",
+    "email": "alex@example.com",
+    "age": 40,
+    "gender": "male",
+    "address": "999 Cedar Street",
+    "mobileNo": "9999999999"
+  }
+]

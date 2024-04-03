@@ -1,0 +1,69 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "user_management",
+    "dateExported": "2024-04-03T12:46:41.606Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "0acea0fa-1328-4e4a-b3c3-937ab9c42cfd",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-04-03T12:43:14.359Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "21f14bce-165f-499e-aa8e-881c8e756a1e",
+            "colId": "4199f3c9-89e8-4f95-b7eb-0a712939aa26",
+            "containerId": "0acea0fa-1328-4e4a-b3c3-937ab9c42cfd",
+            "name": "get user by id",
+            "url": "http://localhost:3000/users/6",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-03T12:43:49.851Z",
+            "modified": "2024-04-03T12:45:18.223Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "01f84f8f-a974-4322-b2dc-1dd598cd03a0",
+            "colId": "4199f3c9-89e8-4f95-b7eb-0a712939aa26",
+            "containerId": "0acea0fa-1328-4e4a-b3c3-937ab9c42cfd",
+            "name": "add new user",
+            "url": "http://localhost:3000/users",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-03T12:43:59.919Z",
+            "modified": "2024-04-03T12:46:01.068Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n    \"name\": \"Ayushi\",\r\n    \"email\": \"joy@example.com\",\r\n    \"age\": 29,\r\n    \"gender\": \"female\",\r\n    \"address\": \"999 Cedar Street\",\r\n    \"mobileNo\": \"9999999999\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "374b21d7-aca0-484f-952f-580a3f15642b",
+            "colId": "4199f3c9-89e8-4f95-b7eb-0a712939aa26",
+            "containerId": "0acea0fa-1328-4e4a-b3c3-937ab9c42cfd",
+            "name": "update user",
+            "url": "http://localhost:3000/users/6",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-03T12:44:12.845Z",
+            "modified": "2024-04-03T12:46:25.034Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n    \"name\": \"Joy Choudhury\",\r\n    \"email\": \"joy@example.com\",\r\n    \"age\": 29,\r\n    \"gender\": \"male\",\r\n    \"address\": \"999 Cedar Street\",\r\n    \"mobileNo\": \"9999999999\"\r\n  }",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
