@@ -37,7 +37,7 @@ function validateEmail(email) {
  */
 function validateAge(age) {
     if (isNaN(age)) {
-        return { isValid: false, error: "Age must be a number" };
+        return { isValid: false, error: "Age is required" };
     }
     if (age < 18 || age > 100) {
         return { isValid: false, error: "Age must be between 18 and 100" };
@@ -50,6 +50,12 @@ function validateAge(age) {
  * @type {string}
  */
 function validateGender(gender) {
+    if (!gender || gender.trim() === "" || gender == undefined) {
+        return {
+            isValid: false,
+            error: "Gender is required",
+        };
+    }
     const lowerCaseGender = gender.toLowerCase();
     const allowedGenders = ["male", "female", "other"];
     if (!allowedGenders.includes(lowerCaseGender)) {
@@ -83,15 +89,17 @@ function validateAddress(address) {
  * @type {string}
  */
 function validateMobileNo(mobileNo) {
-    if (mobileNo.length != 10) {
-        for (let i = 0; i < mobileNo.length; i++) {
-            if (mobileNo[i] <= "0" && mobileNo[i] >= "9") {
-                return {
-                    isValid: false,
-                    error: "Mobile number should be a valid 10-digit number",
-                };
-            }
-        }
+    if (!mobileNo) {
+        return {
+            isValid: false,
+            error: "Mobile number is required",
+        };
+    }
+    if (mobileNo.length !== 10 || !/^\d+$/.test(mobileNo)) {
+        return {
+            isValid: false,
+            error: "Mobile number should be a valid 10-digit number",
+        };
     }
     return { isValid: true };
 }
@@ -101,12 +109,12 @@ function validateMobileNo(mobileNo) {
  * @returns ValidationResult indicating whether all fields are valid or not.
  */
 function validateUser(user) {
-    const nameValidation = validateName(user.name);
-    const emailValidation = validateEmail(user.email);
-    const ageValidation = validateAge(user.age);
-    const genderValidation = validateGender(user.gender);
-    const addressValidation = validateAddress(user.address);
-    const mobileNoValidation = validateMobileNo(user.mobileNo);
+    const nameValidation = validateName(user === null || user === void 0 ? void 0 : user.name);
+    const emailValidation = validateEmail(user === null || user === void 0 ? void 0 : user.email);
+    const ageValidation = validateAge(user === null || user === void 0 ? void 0 : user.age);
+    const genderValidation = validateGender(user === null || user === void 0 ? void 0 : user.gender);
+    const addressValidation = validateAddress(user === null || user === void 0 ? void 0 : user.address);
+    const mobileNoValidation = validateMobileNo(user === null || user === void 0 ? void 0 : user.mobileNo);
     if (!nameValidation.isValid) {
         return nameValidation;
     }
